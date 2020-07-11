@@ -62,3 +62,7 @@ exports.getfeedback = catchAsync(async(req,res,next)=>{
         feedback:currfeedback
     })
 })
+
+exports.feedbackpage = catchAsync(async(req,res,next)=>{
+    return next (new AppError('This page is under construction.sorry for inconvenience',404));
+})

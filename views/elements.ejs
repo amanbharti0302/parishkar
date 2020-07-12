@@ -27,12 +27,13 @@
 								<section>
 									<h4>FEEDBACK</h4>
 								
+									<% for(var i=0; i<currfeedback.length; i++) {%>
 									<hr/>
-									<h6 style="letter-spacing: normal;"><%=currfeedback[0]._id %></h6>
-									<h6 style="letter-spacing: normal;"><%=currfeedback[0].name %></h6>
-									<h6 style="letter-spacing: normal;"><%=currfeedback[0].address %></h6>
-									<h6 style="letter-spacing: normal;"><%=currfeedback[0].state %></h6>
-									<h6 style="letter-spacing: normal;"><%=currfeedback[0].mobile %></h6>
+									<h6 style="letter-spacing: normal;">ID : <%=currfeedback[i]._id %></h6>
+									<h6 style="letter-spacing: normal;">NAME : <%=currfeedback[i].name %></h6>
+									<h6 style="letter-spacing: normal;">ADDRESS : <%=currfeedback[i].address %></h6>
+									<h6 style="letter-spacing: normal;">STATE : <%=currfeedback[i].state %></h6>
+									<h6 style="letter-spacing: normal;">MOBILE NO. : <%=currfeedback[i].mobile %></h6>
 									<div class="table-wrapper">
 										<table>
 											<thead>
@@ -44,13 +45,14 @@
 											</thead>
 											<tbody>
 												<tr>
-													<td><%=currfeedback[0].good %></td>
-													<td><%=currfeedback[0].bad %></td>
-													<td><%=currfeedback[0].normal %></td>
+													<td><%=currfeedback[i].good %></td>
+													<td><%=currfeedback[i].bad %></td>
+													<td><%=currfeedback[i].normal %></td>
 												</tr>
 											</tbody>
 										</table>
 									</div>
+									<% }%>
 
 					</article>
 

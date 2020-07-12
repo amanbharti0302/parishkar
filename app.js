@@ -36,6 +36,9 @@ app.use(mongoSanitize());
 app.get('/',function(req,res){
   res.render("index");
 })
+
+
+
 app.use('/feedback/',feedbackRouter);
 
 app.all('*', (req, res, next) => {

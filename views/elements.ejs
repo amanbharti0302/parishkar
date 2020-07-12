@@ -1,0 +1,58 @@
+<%- include("partials/header2")-%>
+
+				<!-- Main -->
+					<article id="main">
+						<!-- <header>
+							<h2>Elements</h2>
+							<p>Aliquam ut ex ut interdum donec amet imperdiet eleifend</p>
+						</header> -->
+						<section class="wrapper style5">
+							<div class="inner">
+
+								<section>
+									<!-- <h4>Text</h4>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p> -->
+									<!-- <hr /> -->
+									<header>
+										<h4>Welcome you to feedback portal of Patna</h4>
+										<p>Here you can checkout all the feedbacks of patna district and monitor stakeholders</p>
+									</header>
+									<header>
+										<h5>Go below and monitor all the feedback of Patna</h5>
+									</header>
+
+
+								<section>
+									<h4>FEEDBACK</h4>
+								
+									<hr/>
+									<h6 style="letter-spacing: normal;"><%=currfeedback[0]._id %></h6>
+									<h6 style="letter-spacing: normal;"><%=currfeedback[0].name %></h6>
+									<h6 style="letter-spacing: normal;"><%=currfeedback[0].address %></h6>
+									<h6 style="letter-spacing: normal;"><%=currfeedback[0].state %></h6>
+									<h6 style="letter-spacing: normal;"><%=currfeedback[0].mobile %></h6>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>GOOD</th>
+													<th>BAD</th>
+													<th>NORMAL</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><%=currfeedback[0].good %></td>
+													<td><%=currfeedback[0].bad %></td>
+													<td><%=currfeedback[0].normal %></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+					</article>
+
+				<!-- Footer -->
+				<%- include("partials/footer2")-%>

@@ -66,8 +66,12 @@ exports.getfeedback = catchAsync(async(req,res,next)=>{
 exports.feedbackpage = catchAsync(async(req,res,next)=>{
     const currfeedback = await feedback.find();
 
-    res.status(200).json({
-        status:"success",
-        feedback:currfeedback
-    })
+    //console.log(currfeedback);
+
+    res.render('elements',{currfeedback:currfeedback});
+
+    // res.status(200).json({
+    //     status:"success",
+    //     feedback:currfeedback
+    // })
 })

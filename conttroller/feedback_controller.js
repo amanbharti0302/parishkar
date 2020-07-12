@@ -64,5 +64,10 @@ exports.getfeedback = catchAsync(async(req,res,next)=>{
 })
 
 exports.feedbackpage = catchAsync(async(req,res,next)=>{
-    return next (new AppError('This page is under construction.sorry for inconvenience',404));
+    const currfeedback = await feedback.find();
+
+    res.status(200).json({
+        status:"success",
+        feedback:currfeedback
+    })
 })
